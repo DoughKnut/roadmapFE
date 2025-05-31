@@ -13,4 +13,4 @@ This is my portfolio(?)[of sorts] into the Frontend of things aside from my purs
    But the contact page was quite an endeavour. Using the input fields was fun but rather tricky to manipulate. Hence the contact page doesn't use table formatting
    The top nav bar is "responsive" thanks to the tables properties. Used <th> and <td> to give the impression of active tabs vs inactive ones
    
-   Takeways: input, label, form, div
+   Takeways: input, label, form, div, SEO
