@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML_Web Portfolio</title>
+    <style>
+      div.page {
+        max-width: 900px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <table style="width: 100%; font-family: Verdana">
+        <tr>
+          <th style="width: 2%">
+            <img src="images/profile.png" width="36px" height="36px" />
+          </th>
+          <th align="left" valign="middle" style="height: 56px; width: 70%">
+            <b>Rakshith Raghav Joshi</b>
+          </th>
+          <td align="middle" style="padding: 6px">
+            <a
+              href="2. website.html"
+              title="Return"
+              style="text-decoration: none; color: #123456"
+              >Home</a
+            >
+          </td>
+          <td align="middle" style="padding: 6px">
+            <a
+              href="2. p_projects.html"
+              title="Sample works"
+              style="text-decoration: none; color: #123456"
+              >Projects</a
+            >
+          </td>
+          <td align="middle" style="padding: 6px">
+            <a
+              href="2. p_resume.html"
+              title="Curriculum-Vitae"
+              style="text-decoration: none; color: #123456"
+              >Resume</a
+            >
+          </td>
+          <th align="middle" style="padding: 6px">Contact</th>
+        </tr>
+      </table>
+      <div style="max-width: 900px; margin: auto; font-family: Verdana">
+        <form
+          action="/action_page.php"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            margin-top: 36px;
+          "
+        >
+          <div style="flex: 1 1 60%">
+            <img
+              src="images/undraw_mail.png"
+              alt="Mail Illustration"
+              style="width: 100%; max-width: 400px"
+            />
+          </div>
+
+          <div style="flex: 1 1 35%; min-width: 250px">
+            <h3 style="text-align: center">Submit Your Details</h3>
+
+            <label
+              for="clientname"
+              style="
+                display: block;
+                font-size: 14px;
+                color: grey;
+                margin-bottom: 4px;
+              "
+              ><b>Name</b></label
+            >
+            <input
+              type="text"
+              id="clientname"
+              name="fullname"
+              style="width: 100%; padding: 6px; margin-bottom: 12px"
+            />
+
+            <label
+              for="contact"
+              style="
+                display: block;
+                font-size: 14px;
+                color: grey;
+                margin-bottom: 4px;
+              "
+              ><b>Enter E-Mail</b></label
+            >
+            <input
+              type="email"
+              id="contact"
+              name="email"
+              style="width: 100%; padding: 6px; margin-bottom: 12px"
+            />
+
+            <label
+              for="message"
+              style="
+                display: block;
+                font-size: 14px;
+                color: grey;
+                margin-bottom: 4px;
+              "
+              ><b>Message</b></label
+            >
+            <textarea
+              id="message"
+              name="text"
+              rows="4"
+              style="width: 100%; padding: 6px; margin-bottom: 16px"
+            ></textarea>
+
+            <div style="text-align: center">
+              <button type="submit" style="padding: 8px 16px">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
