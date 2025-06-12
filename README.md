@@ -14,3 +14,10 @@ This is my portfolio(?)[of sorts] into the Frontend of things aside from my purs
    The top nav bar is "responsive" thanks to the tables properties. Used <th> and <td> to give the impression of active tabs vs inactive ones
    
    Takeways: input, label, form, div, SEO
+
+4. Responsive Website (HTML+CSS): https://roadmap.sh/projects/portfolio-website
+   I tried to take it a step further. It was during this I started reading Eloquent Javascript and also found the term 'vibecoding'
+   On an otherwise daunting task, the syntax are much clearer to me now. Flexbox was quite a challenge to figure
+   It has been a big leap getting into positioning divs/sections; Getting a hang of classes and selectors is quite tricky(Used GPT to sort a messy line or two)
+
+   Takeaways: @media (responsiveness); display: flex, block etc; icons; hover; box-sizing; z-index
