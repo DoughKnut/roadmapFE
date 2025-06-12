@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fffffc;
+  color: #2d3142;
+  line-height: 1.5;
+  padding-top: 60px; /* space for fixed header */
+}
+
+/* Hero Image */
+img.hero {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: 0% 85%;
+  display: block;
+  margin-bottom: 40px;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 24px;
+  background: #fffffc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+  border-bottom-left-radius:8px;
+  border-bottom-right-radius:8px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pagelogo {
+  height: 36px;
+  width: 36px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.title {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.right {
+  display: flex;
+  gap: 20px;
+}
+
+.links {
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.links:hover {
+  color: #ff6542;
+}
+
+/* Hero Heading */
+.heading {
+  max-width: 700px;
+  font-size: 36px;
+  padding: 0 24px;
+  margin-block-start: 56px;
+}
+
+#subtext {
+  font-size: 18px;
+  color: #67697c;
+  margin-top: 16px;
+}
+
+/* Section Title */
+#maintext {
+  font-size: 28px;
+  margin: 56px 24px 56px 24px;
+  display: flex;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12-column system */
+  gap: 60px;
+  padding: 0 24px;
+  margin-bottom: 80px;
+}
+
+.project {
+  height: 400px;
+  background: #e8e8e8;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* Positioning each card within the 12-column grid */
+.projecta {
+  grid-column: 2 / 6;
+  grid-row: 1;
+}
+
+.projectb {
+  grid-column: 6 / 12;
+  grid-row: 1;
+  margin-top: 240px; /* midway height of .projecta */
+}
+
+.projectc {
+  grid-column: 2 / 12;
+  grid-row: 2;
+  margin-top: 20px; /* offset below .projectb */
+}
+
+.projectd {
+  grid-column: 2 / 8;
+  grid-row: 3;
+  margin-top: 0px;
+}
+
+.projecte {
+  grid-column: 8 / 12;
+  grid-row: 3;
+  margin-top: 240px; /* midway height of .projectd */
+}
+
+/* Responsive stack at mobile width */
+@media (max-width: 900px) {
+  .projecta,
+  .projectb,
+  .projectc,
+  .projectd,
+  .projecte {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    margin-top: 0 !important; /* Prevent overlaps */
+  }
+  .project-grid {
+    gap: 40px;
+  }
+}
+
+/* ---- ---- RESUME ---- ---- */
+
+#resume {
+  padding: 0 56px;
+  margin-bottom: 80px;
+}
+
+.resume-wrapper {
+  display: flex;
+  gap: 120px;
+  flex-wrap: wrap;
+}
+
+.experience,
+.education {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.resumetitle {
+  font-size: 24px;
+  margin-left: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 32px;
+}
+
+.entry {
+  margin-bottom: 40px;
+  margin-left: 24px;
+}
+
+.org {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.location {
+  color: tomato;
+  font-size:16px;
+}
+
+.time {
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-style: italic;
+  color: #555;
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsive Stack */
+@media (max-width: 900px) {
+  .resume-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.resume-download {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.resume-button {
+  padding: 12px 24px;
+  background-color: #2d3142;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #ff6542;
+}
